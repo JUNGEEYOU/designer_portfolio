@@ -6,12 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var aboutJcp = require('./routes/aboutJcp');
-var contact = require('./routes/contact');
-var news = require('./routes/news');
-var useCoin = require('./routes/useCoin');
-var food = require('./routes/food');
+var info = require('./routes/info');
+var pre = require('./routes/pre');
 
 var app = express();
 
@@ -19,8 +15,8 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// todo favicon 변경
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -28,12 +24,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/aboutJcp', aboutJcp);
-app.use('/contact', contact);
-app.use('/news', news);
-app.use('/useCoin', useCoin);
-app.use('/food', food);
+app.use('/info', info);
+app.use('/pre', pre);
 
 
 // catch 404 and forward to error handler
