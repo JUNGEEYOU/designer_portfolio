@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+  <!-- SPELLS -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/news.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/footer.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/alter.css" />
+
+  <script src="javascripts/nav.js"></script>
+  <script src="javascripts/new.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-app="scotchApp">
+
+    <div class="wrapper">
+        <header>
+           <nav>
+              <div class="menu-icon">
+                 <i class="fa fa-bars fa-2x"></i>
+              </div>
+              <div class="logo">
+                 JCPARTNER
+              </div>
+              <div class="menu">
+                 <ul>
+                    <li><a href="/" >Jcpartner</a></li>
+                    <li><a href="useCoin" >Use A Coin</a></li>
+                    <li><a href="aboutJcp" >About JCP</a></li>
+                    <li><a class="act" href="news" >News</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a onclick="notService()">Sign up</a></li>
+                 </ul>
+              </div>
+           </nav>
+        </header>
+      
+
+</div>
+
+
+
+
+  <div id="main">
+      <p style="position: absolute; top: 20%; left: 10%; color: #eee; font-size: 36px;"><b>News</b></p>
+      <div class="container" style="margin-top: 20px;z-index: -1;"  >
+          <div class="row" style="z-index: -1;">
+              <div class="col-md-6">
+                  <div id="news-slider" class="owl-carousel">
+                      <div class="post-slide">
+                          <div class="post-img">
+                              <img  style="z-index: -1;" src="images/background/news_1.jpeg"  alt="">
+                              <div class="category">Post 1</div>
+                          </div>
+                          <div class="post-review">
+                              <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+                             <p class="post-description">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda culpa cumque dicta sint soluta voluptas eius iusto modi reprehenderit sint soluta voluptas.
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda culpa cumque dicta sint soluta voluptas eius iusto modi reprehenderit sint soluta voluptas
+      </p>
+                             
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      <div class="col-md-6">
+                  <div id="news-slider" class="owl-carousel">
+                      <div class="post-slide">
+                          <div class="post-img">
+                              <img src="images/background/news_2.jpeg" alt="">
+                              <div class="category">Post 2</div>
+                          </div>
+                          <div class="post-review">
+                              <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+                              <p class="post-description">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda culpa cumque dicta sint soluta voluptas eius iusto modi reprehenderit sint soluta voluptas.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda culpa cumque dicta sint soluta voluptas eius iusto modi reprehenderit sint soluta voluptas                        
+      </p>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="container" style="margin-top: 20px">
+          <div class="row">
+              <div class="col-md-6">
+                  <div id="news-slider" class="owl-carousel">
+                      <div class="post-slide">
+                          <div class="post-img">
+                              <img src="images/background/news_3.jpeg"  alt="">
+                              <div class="category">Post 3</div>
+                          </div>
+                          <div class="post-review">
+                              <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+                              <p class="post-description">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda culpa cumque dicta sint soluta voluptas eius iusto modi reprehenderit sint soluta voluptas.
+                              </p>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      <div class="col-md-6">
+                  <div id="news-slider" class="owl-carousel">
+                      <div class="post-slide">
+                          <div class="post-img">
+                              <img src="images/background/news_4.jpeg" alt="">
+                              <div class="category">Post 4</div>
+                          </div>
+                          <div class="post-review">
+                              <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+                              <p class="post-description">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda culpa cumque dicta sint soluta voluptas eius iusto modi reprehenderit sint soluta voluptas.
+                              </p>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+          </div>
+      </div>
+    
+  </div>
+
+
+
+
+  
+ <!-- Footer -->
+ <section id="footer">
+    <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="/"><i class="fa fa-angle-double-right"></i>JCPARTNER</a></li>
+                    <li><a href="/usecoin"><i class="fa fa-angle-double-right"></i>USE A COIN</a></li>
+                    <li><a href="/aboutJcp"><i class="fa fa-angle-double-right"></i>About JCP</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="/news"><i class="fa fa-angle-double-right"></i>News</a></li>
+                    <li><a href="/contact"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>JCPARTNER INFO</h5>
+             <p style="color: #fff; font-size: 12px;text-align: left; margin-left: 30%">
+      <br><b>주소 :</b> 경기도 성남시 분당구 성남대로 916번길 11 글라스타워 5층
+      <br>
+      <br><b>전화번호 :</b> 031-707-3664</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            
+            </div>
+            </hr>
+        </div>	
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            </div>
+            </hr>
+        </div>	
+    </div>
+</section>
+  
+</body>
+
+</html>
