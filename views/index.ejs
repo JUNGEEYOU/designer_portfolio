@@ -30,11 +30,11 @@
 <% include partials/menu %>
 <!-- define angular controller 0, 3, 6 -->
 <% for(var i=0; i<portlist.length; i++) { %>
-    <% if((i==0 ) | (i%3==0)){ %>
+    <% if((i==0 ) | (i%3==0)){  console.log("my location", i);%>
 <div class="row">
 <%}%>
     <div class="col-xs-6 col-md-4"><img width="100%" src="images/portlist/<%= portlist[i].image %>"></div>
-    <% if((i==0 ) | (i%3==0)){ %>
+    <% if( i%3==2){ %>
 </div>
     <%}%>
 <% } %>
