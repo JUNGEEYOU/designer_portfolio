@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="scotchApp">
+<html>
 <head>
     <!-- SPELLS -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -7,37 +7,56 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="javascripts/jquery.cycle.all.min.js"></script>
-    <!--<link rel="shortcut icon" href="/images/background/favicon.ico">-->
-    <style type="text/css">
-        .pics { height: 100%; width: 100%; margin: auto }
-        .pics img { padding: 0; border: 0; background-color: #000; }
-        #avaf { cursor: pointer }
-    </style>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#thek').cycle({
-                fx:      'scrollLeft',
-                next:   '#thek',
-                timeout:  0
-            });
-        });
-    </script>
+    <link rel="shortcut icon" href="/images/background/favicon.ico">
+
     <link rel="stylesheet" type="text/css" href="stylesheets/dots.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/copywhite.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" media="screen"/>
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" media="screen"/>-->
+    <!-- endbuild -->
+    <style>
+
+        #video {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+    </style>
+
 </head>
 <body>
 <% include partials/menu %>
-<!-- define angular controller 0, 3, 6 -->
-<% for(var i=0; i<portlist.length; i++) { %>
-    <% if((i==0 ) | (i%3==0)){  console.log("my location", i);%>
-<div class="row">
-<%}%>
-    <div class="col-xs-6 col-md-4"><img width="100%" src="images/portlist/<%= portlist[i].image %>"></div>
-    <% if( i%3==2){ %>
-</div>
-    <%}%>
-<% } %>
 
+<div id="categories" class="top-feature slider container">
+    <h1 id="logo" class="ir" style="margin-top: 3%"><a href="#">Rue Portpolio</a></h1>
+
+    <div class="video-wrapper">
+        <div class="screen intro" id="screen-1" data-video="media/market">
+            <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                <source src="images/background/backimg.mp4">
+            </video>
+            <!--<img src="images/background/back.png" class="big-image" />-->
+            <div>
+                <div class="span_4 col clearfix">
+                    &nbsp;
+                </div>
+
+                <!--<div class="span_4 col clearfix">-->
+                    <!--<h2 class="screen-heading">-->
+                        <!--One Camp.<br/>-->
+                        <!--Half a million refugees.<br/>-->
+                        <!--Countless stories.<br/>-->
+                    <!--</h2>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

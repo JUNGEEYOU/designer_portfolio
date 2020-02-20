@@ -32,24 +32,6 @@
              width: 20px;
              height: 20px;
          }
-.red {
-    background-color: red;
-}
-.grey {
-    background-color: #A4A9A8;
-}
-.navy {
-    background-color: #21297F;
-}
-.dg {
-    background-color: #606664;
-}
-.black {
-    background-color: #383838;
-}
-.blk {
-    background-color: #000000;
-}
 
 .dots a:active, .dots a:focus {
     outline: 0;

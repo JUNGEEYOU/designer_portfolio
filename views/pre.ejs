@@ -10,7 +10,6 @@
     <style type="text/css">
         .pics { height: 100%; width: 100%; margin: auto }
         .pics img { padding: 0; border: 0; background-color: #000; }
-        #avaf { cursor: pointer }
     </style>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -21,15 +20,15 @@
             });
         });
     </script>
-    <link rel="stylesheet" type="text/css" href="stylesheets/dots.css" media="screen"/>
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/dots.css" media="screen"/>-->
     <link rel="stylesheet" type="text/css" href="stylesheets/copywhite.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" media="screen"/>
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" media="screen"/>-->
 </head>
 <body>
 <% include partials/menu %>
 <!-- define angular controller -->
-<div id="bg">
-    <div id="thek" class="pics">
+<div id="bg"  style="width:100%;height:100%;">
+    <div id="thek" style="height: 100%; width: 100%; ">
         <% for(var i=0; i<portlist.length; i++) { %>
             <b><i><i><img alt="" src="images/portlist/<%= portlist[i].image %>" /></i></i></b>
         <%}%>
