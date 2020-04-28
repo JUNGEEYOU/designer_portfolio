@@ -4,10 +4,9 @@ const fs = require('fs');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log("ttt");
   let rawdata = fs.readFileSync('./public/list.json');
   let myport = JSON.parse(rawdata);
-  res.render('info', {portlist:myport});
+  res.render('three', {portlist:myport});
 });
 
 module.exports = router;
