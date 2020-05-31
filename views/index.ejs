@@ -8,9 +8,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="javascripts/jquery.cycle.all.min.js"></script>
     <link rel="shortcut icon" href="/images/background/favicon.ico">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/dots.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/copywhite.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen"/>
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/dots.css" media="screen"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/copywhite.css" media="screen"/>-->
     <!--<link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" media="screen"/>-->
     <!-- endbuild -->
     <style>
@@ -34,29 +34,23 @@
 <% include partials/menu %>
 
 <div id="categories" class="top-feature slider container">
-    <h1 id="logo" class="ir" style="margin-top: 3%; font-size: 50px"><a href="/">JEONGIL RYU</a></h1>  
-
-    <div class="video-wrapper">
-        <div class="screen intro" id="screen-1" data-video="media/market">
-            <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                <source src="images/background/backimg.mp4">
-            </video>
-            <!--<img src="images/background/back.png" class="big-image" />-->
-            <div>
-                <div class="span_4 col clearfix">
-                    &nbsp;
+    <div class="row">
+        <div class="col-md-4">
+            <h1  class="ir" style="margin-top: 3%; font-size: 50px"><a style="color:#ff0066; font-size: 22pt; font-family: 'Six Caps', sans-serif;" href="/">JEONGIL RYU</a></h1>
+        </div>
+        <div class="col-md-8">
+            <div class="video-wrapper">
+                <div class="screen intro" id="screen-1" data-video="media/market">
+                    <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                        <source src="images/background/backimg.mp4">
+                    </video>
+                    <div>
+                    </div>
                 </div>
-
-                <!--<div class="span_4 col clearfix">-->
-                    <!--<h2 class="screen-heading">-->
-                        <!--One Camp.<br/>-->
-                        <!--Half a million refugees.<br/>-->
-                        <!--Countless stories.<br/>-->
-                    <!--</h2>-->
-                <!--</div>-->
             </div>
         </div>
     </div>
+
 </div>
 </body>
 </html>
