@@ -9,40 +9,30 @@
     <script src="javascripts/jquery.cycle.all.min.js"></script>
     <link rel="shortcut icon" href="/images/background/favicon.ico">
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen"/>
-    <!--<link rel="stylesheet" type="text/css" href="stylesheets/dots.css" media="screen"/>-->
-    <!--<link rel="stylesheet" type="text/css" href="stylesheets/copywhite.css" media="screen"/>-->
-    <!--<link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" media="screen"/>-->
-    <!-- endbuild -->
-    <style>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel="stylesheet" href="stylesheets/ribbon-gallery.min.css">
+    <!--<script src="/path/to/jquery.min.js"></script>-->
+    <script src="javascripts/ribbon-gallery.min.js"></script>
 
-        #video {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            overflow: hidden;
-        }
 
-    </style>
 
 </head>
 <body>
 <% include partials/menu %>
 
-<div id="categories" class="top-feature slider container">
-    <div class="row">
+<div class="top-feature slider container" style="height: 600px">
+    <div class="row align-middle" style="height: 100%" >
         <div class="col-md-4">
-            <h1  class="ir" style="margin-top: 3%; font-size: 50px"><a style="color:#ff0066; font-size: 22pt; font-family: 'Six Caps', sans-serif;" href="/">JEONGIL RYU</a></h1>
+            <h1  class="align-middle" style="margin-top: 50%; font-size: 50px"><a style="color:#ff0066; font-size: 22pt; font-family: 'Six Caps', sans-serif;" href="/">JEONGIL RYU</a></h1>
         </div>
         <div class="col-md-8">
             <div class="video-wrapper">
                 <div class="screen intro" id="screen-1" data-video="media/market">
-                    <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                        <source src="images/background/backimg.mp4">
+                    <!--<video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">-->
+                        <!--<source src="images/background/backimg.mp4">-->
+                    <!--</video>-->
+                    <video class="video-fluid z-depth-1" autoplay loop controls muted>
+                        <source src="images/background/backimg.mp4" type="video/mp4" />
                     </video>
                     <div>
                     </div>

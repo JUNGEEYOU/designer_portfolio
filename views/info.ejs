@@ -8,29 +8,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="javascripts/jquery.cycle.all.min.js"></script>
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/5945b401-cf4d-425d-9bd1-d72be5050e4d.js"></script>
-    <style type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen"/>
 
-        .pics { height: 100%; width: 100%;}
-        .pics img { width: 100%; height: auto;  overflow: hidden;
-            padding-right: 7%; padding-left: 7%; background-color: #ffffff; }
-    </style>
-    <script type="text/javascript">
-        $(document).ready(function() { 
-            $('#thek').cycle({
-                fx:      'scrollLeft',
-                next:   '#thek',
-                timeout:  0
-            });
-        });
-    </script>
-    <link rel="stylesheet" type="text/css" href="http://www.comme-des-garcons.com/css/dots.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/copywhite.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/scalerw.css" />
-    <link rel="stylesheet" type="text/css" href="http://www.comme-des-garcons.com/dm/_legacy/css/dots.css" />
 </head>
 <body>
-<% include partials/menu %>
+<% include partials/menu_2 %>
 <!-- define angular controller -->
 <div id="bg" >
     <div id="thek" class="pics">
@@ -44,6 +26,5 @@
     </div>
 </div>
 
-<!--<script type="text/javascript" src="../_legacy/js/scaler.js"></script>-->
 </body>
 </html>
