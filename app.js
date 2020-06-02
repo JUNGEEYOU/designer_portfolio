@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var indexRouter = require('./routes/index');
 var other = require('./routes/other');
 var projects = require('./routes/projects');
-var three = require('./routes/three'); 
+var about = require('./routes/about'); 
 var contact = require('./routes/contact'); 
 
 var app = express();
@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/other', other);
 app.use('/projects', projects);
-app.use('/three', three); 
+app.use('/about', about); 
 app.use('/contact', contact);
 
 
