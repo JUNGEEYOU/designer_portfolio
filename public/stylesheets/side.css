@@ -1,13 +1,13 @@
-/*.group {*/
-    /*background: yellow;*/
-    /*width: 200px;*/
-    /*height: 500px;*/
-/*}*/
-/*.group .subgroup {*/
-    /*background: orange;*/
-    /*width: 150px;*/
-    /*height: 200px;*/
-/*}*/
+.group {
+    background: yellow;
+    width: 200px;
+    height: 500px;
+}
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 200px;
+}
 .fixed {
     position: fixed;
 }
@@ -37,22 +37,22 @@
 }
 
 /* active & hover links */
-.bs-docs-sidebar .nav>.active>a,
-.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
 .bs-docs-sidebar .nav>li>a:focus {
-    color: #ff0066;
-    text-decoration: none;
-    background-color: transparent;
-    border-left-color: #ff0066;
+    color: #563d7c;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #563d7c; 
 }
 /* all active links */
-.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active>a, 
 .bs-docs-sidebar .nav>.active:hover>a,
 .bs-docs-sidebar .nav>.active:focus>a {
     font-weight: 700;
 }
 /* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active>a, 
 .bs-docs-sidebar .nav .nav>.active:hover>a,
 .bs-docs-sidebar .nav .nav>.active:focus>a {
     font-weight: 500;
@@ -60,9 +60,9 @@
 
 /* hide inactive nested list */
 .bs-docs-sidebar .nav ul.nav {
-    display: none;
+    display: none;           
 }
 /* show active nested list */
 .bs-docs-sidebar .nav>.active>ul.nav {
-    display: block;
+    display: block;           
 }

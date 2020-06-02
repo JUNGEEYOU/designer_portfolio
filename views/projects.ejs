@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+    <!-- SPELLS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/side.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/ribbon-gallery.min.css">
+    <script src="javascripts/ribbon-gallery.min.js"></script>
+    <script>
+        $('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+});
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="nav_">
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                <a style="color:#ff0066; font-size: 22pt; font-family: 'Six Caps', sans-serif;" href="/" >JEONGIL RYU </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="pre" class="act" >PROJECTS</a></li>
+                    <li><a href="other" >OTHER</a></li>
+                    <li><a href="three" >ABOUT</a></li>
+                    <li><a href="three" >CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <!--Nav Bar -->
+        <nav class="col-xs-3 bs-docs-sidebar">
+            <ul id="sidebar" class="nav nav-stacked fixed">
+                <li>
+                    <a href="#GroupA">Group A</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#GroupASub1">Sub-Group 1</a></li>
+                        <li><a href="#GroupASub2">Sub-Group 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#GroupB">Group B</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#GroupBSub1">Sub-Group 1</a></li>
+                        <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#GroupC">Group C</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#GroupCSub1">Sub-Group 1</a></li>
+                        <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Main Content -->
+        <div class="col-xs-9">
+            <section id="GroupA" class="group">
+                <dev class="ribbon-gallery" id="GroupASub1" class="subgroup">
+
+                    <iframe  src="https://player.vimeo.com/video/414757558?autoplay=0&loop=1&title=1&byline=0&portrait=0" width="700" height="281"
+                             frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                    <img src="https://simonerocha.com/wp-content/uploads/2020/03/SimoneRocha-4-MonclerGenius-SS20-Lookbook-byAndrewNuding-Look-01-853x1280.jpg" width="auto" height="500" alt="" />					<div class="post-title-link">Look 1</div>
+            </dev>
+               
+                <div id="GroupASub2" class="subgroup">
+                    <h4>Group A Sub 2</h4>
+                </div>
+            </section>
+            <section id="GroupB" class="group">
+                <h3>Group B</h3>
+                <dev class="ribbon-gallery" id="GroupASub1" class="subgroup">
+
+                    <iframe  src="https://player.vimeo.com/video/414757558?autoplay=0&loop=1&title=1&byline=0&portrait=0" width="700" height="281"
+                             frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                    <img src="https://simonerocha.com/wp-content/uploads/2020/03/SimoneRocha-4-MonclerGenius-SS20-Lookbook-byAndrewNuding-Look-01-853x1280.jpg" width="auto" height="500" alt="" />					<div class="post-title-link">Look 1</div>
+            </dev>
+                <div id="GroupBSub2" class="subgroup">
+                    <h4>Group B Sub 2</h4>
+                </div>
+            </section> 
+            <section id="GroupC" class="group">
+                <h3>Group C</h3>
+                <div id="GroupCSub1" class="subgroup">
+                    <h4>Group C Sub 1</h4>
+                </div>
+                <div id="GroupCSub2" class="subgroup">
+                    <h4>Group C Sub 2</h4>
+                </div>
+            </section>    
+        </div>
+    </div>
+
+</body>
+</html>
