@@ -4,10 +4,8 @@ html, body {
     width: 100%;
 }
 
-body {
-    font-family: 'Jaldi', sans-serif;
-    /*font-weight: lighter;*/
-
+body{
+    font-family: 'Inconsolata', monospace;
 }
 
 header {
@@ -68,13 +66,13 @@ nav.black ul {
 .nav_ ul li a {
     text-decoration: none;
     color: #000000;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 350;
 }
 .act{
     font:bold;
     color: #ff0066;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 350;
 }
 
