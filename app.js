@@ -9,8 +9,8 @@ var indexRouter = require('./routes/index');
 var other = require('./routes/other');
 var projects = require('./routes/projects');
 var about = require('./routes/about'); 
-var contact = require('./routes/contact'); 
-
+var contact = require('./routes/contact');
+var projects2 = require('./routes/projects2');
 var app = express();
 
 // view engine setup
@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/other', other);
 app.use('/projects', projects);
+app.use('/projects2', projects2);
 app.use('/about', about); 
 app.use('/contact', contact);
 
