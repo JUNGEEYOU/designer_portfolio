@@ -9,215 +9,178 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/base_2.css" media="screen"/>
-    <link rel="stylesheet" href="https://use.typekit.net/crf4rue.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/base.css" />-->
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-    <!--<link rel="stylesheet" href="stylesheets/ribbon-gallery.min.css">-->
-    <!--<script src="javascripts/ribbon-gallery.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/base.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/news.css" />
 
     <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
-
+<script>
+    $(document).ready(function() {
+    $("#news-slider").owlCarousel({
+        items:3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[1000,2],
+        itemsMobile:[650,1],
+        pagination:false,
+        navigationText:false,
+        autoPlay:true
+    });
+});
+</script>
+<style>
+    body{
+        font-family: 'Inconsolata', monospace;
+    }
+</style>
 </head>
 <body>
-
-<!--<header>-->
-    <nav class="nav_">
-        <!--<div class="menu-icon">-->
-            <!--<i class="fa fa-bars fa-2x"></i>-->
-        <!--</div>-->
-        <div class="logo">
-            <a style="color:#ff0066; font-size: 18pt; font-family: 'Fugaz One', cursive;" href="/" >JEONGIL RYU </a>
+    <header>
+        <nav class="nav_">
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                <a style="color:#ff0066; font-size: 18pt; font-family: 'Fugaz One', cursive;" href="/" >JEONGIL RYU </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="projects" style="font:bold;
+                        color: #ff0066;
+                        font-size: 16px;
+                        font-weight: 350; font-family: 'Inconsolata', monospace;" >PROJECTS</a></li> 
+                    <li><a href="other" >OTHER</a></li>
+                    <li><a href="about" >ABOUT</a></li>
+                    <li><a href="contact" >CONTACT</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <!-- <p style="position: absolute; top: 20%; left: 10%; color: #eee; font-size: 36px;"><b>News</b></p> -->
+        <div class="row">
+            <div class="col-md-1">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="projects2/1">TAILORING</a></li>
+                    <li><a href="projects2/2">CUTTING</a></li>
+                    <li><a href="projects2/3">RESEARCH</a></li>
+                    <li><a href="projects2/4">SUSTAINABLE</a></li>
+                    <li><a href="projects2/5">PRINT</a></li>
+                    <li><a href="projects2/6">WHITE</a></li>
+                  </ul>
+            </div>
+            <div class="col-md-11">
+                <div class="container" style="margin-top: 10px;z-index: -1;"  >
+                        <div class="row" style="z-index: -1;">
+                            <div class="col-md-4">
+                                <div id="news-slider" class="owl-carousel">
+                                    <div class="post-slide">
+                                        <div class="post-img">
+                                            <img  style="z-index: -1;" src="images/first/1.jpg"  alt="">
+                                            <div class="category" style="width: 50%;">Project 01</div>
+                                        </div>
+                                        <div class="post-review">
+                                            <h3 class="post-title"><a href="projects2/1">TAILORING</a></h3>
+                                           <p class="post-description">Do not jump on the lift
+                        <br>The first inspiration is the sign; Do not jump on the lift. It is really interesting for me. I’ve research about the elevator worker. They appeared in 1920s. I’ve researched the worker clothes of 1920s what they matched overalls with tailored jacket. The secondary idea is jumping silhouette for develop the volume. The experiment was jumping many times for observation the changing details.
+            
+                    </p>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-md-4">
+                                <div id="news-slider" class="owl-carousel">
+                                    <div class="post-slide">
+                                        <div class="post-img">
+                                            <img src="images/first/2.jpg" alt="">
+                                            <div class="category" style="width: 50%;">Project 02</div>
+                                        </div>
+                                        <div class="post-review">
+                                            <h3 class="post-title" ><a href="#">CUTTING</a></h3>
+                                            <p class="post-description">Developed the shape of Auditorio de Tenerife Adán Martín                    
+                    </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-md-4">
+                                    <div id="news-slider" class="owl-carousel">
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="images/first/3.jpg" alt="">
+                                                <div class="category" style="width: 50%;">Project 03</div>
+                                            </div>
+                                            <div class="post-review">
+                                                <h3 class="post-title" style="width: 50%;"><a href="#">RESEARCH</a></h3>
+                                                <p class="post-description"> Comfort in the uncomfortable situations.<br> Almost people try to relax even in the uncomfortable situations kind of the first image. That guys wear tight clothes on cramped tube, which is uncomfortable but they try to relax at that time. I am really interested in this situation. I’ve tried to make the kind of uncomfortable situation by using the small box and broken chair for experience. I’ve developed the idea on the garments.
+                        </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container" style="margin-top: 10px">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div id="news-slider" class="owl-carousel">
+                                    <div class="post-slide">
+                                        <div class="post-img">
+                                            <img src="images/first/4.jpg"  alt="">
+                                            <div class="category" style="width: 50%;">Project 04</div>
+                                        </div>
+                                        <div class="post-review">
+                                            <h3 class="post-title"><a href="#">SUSTAINABLE</a></h3>
+                                            <p class="post-description">The problem on the beach; deck chairs <br>In the future, the beach area will be accessible and people will enjoy the ocean activity in their life. However there is one big problem, which is too much use fabrics only once holiday. They wear swimwear and then use the beach towel on the deck chair; too much layering. I would like to reduce it and decide to make one item but 3way; deck chair, beach towel and swimwear. I research about no waste idea; A Piece of Cloth by Issey Miyake.
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-md-4">
+                                <div id="news-slider" class="owl-carousel">
+                                    <div class="post-slide">
+                                        <div class="post-img">
+                                            <img src="images/first/5.jpg" alt="">
+                                            <div class="category" style="width: 50%;">Project 05</div>
+                                        </div>
+                                        <div class="post-review">
+                                            <h3 class="post-title"><a href="#">PRINT</a></h3>
+                                            <p class="post-description">Korean signboard<br>In Korea, there are a lot of signboard more than 2 each store. Looks more attractive. The image is really interesting for me; Layering A lot of the same sign of flower store. I’ve developed the idea for print on the fabric.
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-md-4">
+                                    <div id="news-slider" class="owl-carousel">
+                                        <div class="post-slide">
+                                            <div class="post-img">
+                                                <img src="images/first/6.jpg" alt="">
+                                                <div class="category" style="width: 50%;">Project 06</div>
+                                            </div>
+                                            <div class="post-review">
+                                                <h3 class="post-title"><a href="#">WHITE</a></h3>
+                                                <p class="post-description">The wave on the ocean <br>I would like to research the meeting point between ocean and land. I’ve developed the borderline by layering the images. The images gave me the keyword; the flow of water. The experiments is taking a shower in order to a better view; the flow of water.
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                        </div>
+                    </div>
+            </div>
         </div>
-        <!--<div class="menu" >-->
-            <!--<ul style="margin-top: 100%">-->
-                <!--<li><a href="projects" style="font:bold; color: #ff0066; font-size: 16px;   font-weight: 350;" >PROJECTS</a></li>-->
-                <!--<li><a href="other"  >OTHER</a></li>-->
-                <!--<li><a href="about" >ABOUT</a></li>-->
-                <!--<li><a href="contact"  >CONTACT</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    </nav>
-<!--</header>-->
-<main>
-    <!--<div class="frame">-->
-        <!--&lt;!&ndash;<div class="frame__pagetitle">Draggable Menu with Grid Previews</div>&ndash;&gt;-->
-        <!--<div class="frame__title-wrap">-->
-            <!--<h1 class="frame__title"><div class="logo">-->
-                    <!--<a style="color:#ff0066; font-size: 18pt; font-family: 'Fugaz One', cursive;" href="/" >JEONGIL RYU </a>-->
-                <!--</div></h1>-->
-            <!--<p class="frame__tagline">2008 &mdash; 2019</a></p>-->
-        <!--</div>-->
-        <!--<div class="frame__links">-->
-            <!--<a href="projects">PROJECTS</a>-->
-            <!--<a href='other'>OTHER</a>-->
-            <!--<a href="about">ABOUT</a>-->
-            <!--<a href="contact">CONTACT</a>-->
-        <!--</div>-->
-        <!--&lt;!&ndash;<div class="frame__social">&ndash;&gt;-->
-            <!--&lt;!&ndash;<a href="#" aria-label="Link to Yuri's Behance profile"><images/>ex src="images/ex/behance.svg" class="frame__social-behance" alt="Behance Logo"/></a>&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>-->
-    <div class="page page--preview">
-        <div class="grid-wrap">
-            <div class="grid grid--layout-1">
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/1.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/2.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/3.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/4.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/5.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/6.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/7.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/8.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/9.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/10.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/11.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/12.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/13.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/14.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/15.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/TAILORING/16.jpg)"></div></div>
-            </div>
-            <div class="grid grid--layout-2">
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/1.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/2.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/3.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/4.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/5.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/6.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/7.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/8.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/9.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/10.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/11.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/12.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/13.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/14.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/15.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/16.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/17.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/18.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/19.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/20.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/21.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/22.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/23.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/24.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/CUT/25.jpg)"></div></div>
-            </div>
-            <div class="grid grid--layout-3">
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/1.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/2.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/3.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/4.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/5.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/6.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/7.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/RESEARCH/8.jpg)"></div></div>
-            </div>
-            <div class="grid grid--layout-4">
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/1.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/2.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/3.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/4.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/5.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/6.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/7.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/8.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/9.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/SUSTAINABLE/10.jpg)"></div></div>
-            </div>
-            <div class="grid grid--layout-5">
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/PRINT/1.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/PRINT/2.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/PRINT/3.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/PRINT/4.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/PRINT/5.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/PRINT/6.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/PRINT/7.jpg)"></div></div>
-            </div>
-            <div class="grid grid--layout-5">
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/1.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/2.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/3.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/4.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/5.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/6.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/7.jpg)"></div></div>
-                <div class="grid__item-wrap"><div class="grid__item" style="background-image: url(images/WHITE/8.jpg)"></div></div>
-            </div>
-            <button class="gridback"><svg width="27px" height="15px" viewBox="0 0 27 15"><path d="M1.469 6.75l-.719.719 7.938 6.937.718-.719L1.47 6.75zM8.594.531L.75 7.375l.688.688L9.28 1.218 8.594.53zM1.406 6.938v1h24.75v-1H1.406z" fill="#de6565"/></svg></button>
-        </div><!-- /grid-wrap -->
-    </div><!-- /page -->
-    <div class="menu-wrap">
-        <div class="menu-draggable"></div>
-        <nav class="menu">
-            <div class="menu__item">
-                <a class="menu__item-link">TAILORING</a>
-
-                <a class="menu__item-explore">explore <br><h4>Do not jump on the lift
-                        <br>
-                        The first inspiration is the sign; Do not jump on the lift. It is really interesting for me. I’ve research about the elevator worker. They appeared in 1920s. I’ve researched the worker clothes of 1920s what they matched overalls with tailored jacket. The secondary idea is jumping silhouette for develop the volume. The experiment was jumping many times for observation the changing details.
-
-                    </h4></a>
-            </div>
-            <div class="menu__item">
-                <a class="menu__item-link">CUTTING</a>
-
-                <a class="menu__item-explore">explore<br><h4 class="menu__item-text">
-                        Developed the shape of Auditorio de Tenerife Adán Martín
-                    </h4></a>
-            </div>
-            <div class="menu__item">
-                <a class="menu__item-link">RESEARCH</a>
-
-                <a class="menu__item-explore">explore<br><h4 class="menu__item-text">
-                        Comfort in the uncomfortable situations.
-                        <br>
-                        Almost people try to relax even in the uncomfortable situations kind of the first image. That guys wear tight clothes on cramped tube, which is uncomfortable but they try to relax at that time. I am really interested in this situation. I’ve tried to make the kind of uncomfortable situation by using the small box and broken chair for experience. I’ve developed the idea on the garments.
-                    </h4></a>
-            </div>
-            <div class="menu__item">
-                <a class="menu__item-link">SUSTAINABLE</a>
-
-                <a class="menu__item-explore">explore<br><h4 class="menu__item-text">
-                        The problem on the beach; deck chairs
-                        <br>
-                        In the future, the beach area will be accessible and people will enjoy the ocean activity in their life. However there is one big problem, which is too much use fabrics only once holiday. They wear swimwear and then use the beach towel on the deck chair; too much layering. I would like to reduce it and decide to make one item but 3way; deck chair, beach towel and swimwear. I research about no waste idea; A Piece of Cloth by Issey Miyake.
-                    </h4></a>
-            </div>
-            <div class="menu__item">
-                <a class="menu__item-link">PRINT</a>
-
-                <a class="menu__item-explore">explore<br> <h4 class="menu__item-text">
-                        Korean signboard
-                        <br>
-                        In Korea, there are a lot of signboard more than 2 each store. Looks more attractive. The image is really interesting for me; Layering A lot of the same sign of flower store. I’ve developed the idea for print on the fabric.
-                    </h4></a>
-
-            </div>
-            <div class="menu__item">
-                <a class="menu__item-link">WHITE</a>
-
-                <a class="menu__item-explore">explore<br><h4 class="menu__item-text">The wave on the ocean
-                        <br>
-                        I would like to research the meeting point between ocean and land. I’ve developed the borderline by layering the images. The images gave me the keyword; the flow of water. The experiments is taking a shower in order to a better view; the flow of water.
-                    </h4></a>
-            </div>
-        </nav><!--menu-->
-    </div><!--/menu-wrap-->
-</main>
-<div class="cursor">
-    <div class="cursor__inner cursor__inner--circle">
-        <div class="cursor__side cursor__side--left"></div>
-        <div class="cursor__side cursor__side--right"></div>
+        
+      
     </div>
-</div>
-<script src="javascripts/pro_2/imagesloaded.pkgd.min.js"></script>
-<script src="javascripts/pro_2/charming.min.js"></script>
-<script src="javascripts/pro_2/TweenMax.min.js"></script>
-<script src="javascripts/pro_2/draggabilly.pkgd.min.js"></script>
-<script src="javascripts/pro_2/demo.js"></script>
+  
 </body>
 </html>

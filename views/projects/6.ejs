@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+    <!-- SPELLS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Khand:wght@500&family=Six+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/index.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" media="screen"/>
+
+    <link rel="stylesheet" href="../stylesheets/ribbon-gallery.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body{
+            font-family: 'Inconsolata', monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav_">
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                <a style="color:#ff0066; font-size: 18pt; font-family: 'Fugaz One', cursive;" href="/" >JEONGIL RYU </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="projects" style="font:bold;
+                        color: #ff0066;
+                        font-size: 16px;
+                        font-weight: 350;" >PROJECTS</a></li> 
+                    <li><a href="other" >OTHER</a></li>
+                    <li><a href="about" >ABOUT</a></li>
+                    <li><a href="contact" >CONTACT</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main">
+        <div class="row">
+            <div class="col-md-1">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="1" >TAILORING</a></li>
+                    <li><a href="2">CUTTING</a></li>
+                    <li><a href="3">RESEARCH</a></li>
+                    <li><a href="4">SUSTAINABLE</a></li>
+                    <li><a href="5">PRINT</a></li>
+                    <li><a href="6" class="act">WHITE</a></li>
+                  </ul>
+            </div>
+            <div class="col-md-11">
+        <div class="row">
+            <div class="col-md-12">
+    
+                <div id="mdb-lightbox-ui"></div>
+    
+                <div class="mdb-lightbox">
+                    <% for(var i = 1; i < 9; i++){ %>
+                        <figure class="col-md-4">
+                            <a href="../images/WHITE/<%= i%>.jpg" style="width: 100px; height: auto; " >
+                                <img alt="picture" src="../images/WHITE/<%= i%>.jpg" class="img-fluid center-block" style="width: 70%; height: auto;margin-top: 10%">
+                            </a>
+                        </figure>
+        
+                      
+                    <% } %>
+    
+    
+    
+                </div>
+    
+            </div>
+        </div>
+        </div>
+
+    </div>
+  
+</body>
+</html>
