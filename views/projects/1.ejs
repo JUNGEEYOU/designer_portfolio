@@ -12,7 +12,10 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/base.css" media="screen"/>
 
     <link rel="stylesheet" href="../stylesheets/ribbon-gallery.min.css">
+    <link rel="stylesheet" href="../stylesheets/lightbox.min.css">
+    <script src="../javascripts/lightbox-plus-jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
     <style>
         body{
             font-family: 'Inconsolata', monospace;
@@ -63,7 +66,7 @@
                 <div class="mdb-lightbox">
                     <% for(var i = 1; i < 17; i++){ %>
                         <figure class="col-md-4">
-                            <a href="../images/TAILORING/<%= i%>.jpg" style="width: 100px; height: auto; " >
+                            <a href="../images/TAILORING/<%= i%>.jpg" style="width: 100px; height: auto; "  data-lightbox="image_set" >
                                 <img alt="picture" src="../images/TAILORING/<%= i%>.jpg" class="img-fluid center-block" style="width: 70%; height: auto;margin-top: 10%">
                             </a>
                         </figure>
