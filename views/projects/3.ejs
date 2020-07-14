@@ -57,31 +57,27 @@
                   </ul>
             </div>
             <div class="col-md-11">
-        <div class="row">
-            <div class="col-md-12">
-    
-                <div id="mdb-lightbox-ui"></div>
-    
-                <div class="mdb-lightbox">
-                    <% for(var i = 1; i < 9; i++){ %>
-                        <figure class="col-md-4">
-                            <a href="../images/RESEARCH/<%= i%>.jpg" style="width: 100px; height: auto;" data-lightbox="image_set_3" >
-                                <img alt="picture" src="../images/RESEARCH/<%= i%>.jpg" class="img-fluid center-block" style="width: 70%; height: auto;margin-top: 10%">
-                            </a> 
-                        </figure>
-        
-                      
-                    <% } %>
-    
-    
-    
-                </div>
-    
+               
+                        <div id="mdb-lightbox-ui"></div>
+            
+                        <div class="mdb-lightbox">
+                            <% for(var i = 1; i < 9; i++){ %>
+                                <% if(i%3==1){ %>
+                                <div class="row">
+                                    <% } %>
+                                    <figure class="col-md-4">
+                                        <a href="../images/RESEARCH/<%= i%>.jpg" style="width: 100px; height: auto; " data-lightbox="image_set_3" >
+                                            <img alt="picture" src="../images/RESEARCH/<%= i%>.jpg" class="img-fluid center-block" style="width: 70%; height: auto;margin-top: 10%">
+                                        </a> 
+                                    </figure>
+                                <% if(i%3==0){ %>
+                                 </div>
+                                 <% } %>
+                            <% } %>
+                        </div>
             </div>
-        </div>
-        </div>
 
+        </div>
     </div>
-  
 </body>
 </html>
